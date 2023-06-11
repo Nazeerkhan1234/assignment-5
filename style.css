@@ -1,0 +1,39 @@
+#p{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.x{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: inline-block;
+    margin-left: 40px;  
+}
+
+.red{
+    background: red;
+    position: absolute;
+    transform: translate(0px , 0px);
+    transition: all 3s linear 1s;
+}
+#p:hover>.red{
+    transform: translate(0px,400px);
+    background: blueviolet;
+}
+
+ .blue{
+    background: blue;
+    position: absolute;
+    transition: all 4s linear;
+    transform: translate(0px,0px);
+    top: 0px;
+    left: 210px;
+}
+#p:hover > .blue{
+    background: yellow;
+    transform: translate(0px,400px); 
+}
